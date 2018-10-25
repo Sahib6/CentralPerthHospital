@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.GridPane?>
+<GridPane fx:id="patientListSearch" prefHeight="-Infinity" prefWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PatientListSearch">
+   <children>
+      <TableView fx:id="tableView" prefHeight="500.0" prefWidth="500.0">
+        <columns>
+          <TableColumn fx:id="patientId" prefWidth="166" text="Patient ID" />
+          <TableColumn fx:id="patientNameList" prefWidth="166" text="Patient Name" />
+          <TableColumn fx:id="patientSurnameList" prefWidth="166" text="Patient Surname" />
+        </columns>
+      </TableView>
+   </children>
+
+
+    <Button fx:id="close" onAction="#closeClick" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.halignment="CENTER">CLOSE</Button>
+</GridPane>

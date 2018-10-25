@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+
+
+<?import javafx.geometry.Insets?>
+<GridPane fx:id="configScreen" alignment="CENTER" style="-fx-background-color: #800080" fx:controller="Controller" xmlns="http://javafx.com/javafx/8.0.121" hgap="40" vgap="40" xmlns:fx="http://javafx.com/fxml/1">
+    <padding><Insets top="10" bottom="10" right="10" left="10"></Insets></padding>
+
+    <Button GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="0" prefWidth="200" prefHeight="30" text="CONFIGURATIONS"/>
+
+    <Button GridPane.halignment="RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="1" prefWidth="150" prefHeight="30" text="BACKGROUND COLOR"/>
+    <Button GridPane.halignment="LEFT" GridPane.columnIndex="1" GridPane.rowIndex="1" prefWidth="150" prefHeight="30" text="FONT SIZE"/>
+
+    <Button GridPane.halignment="CENTER" fx:id="colorWhite" onAction="#colorWhiteClick" GridPane.columnIndex="0" GridPane.rowIndex="2" prefWidth="80" prefHeight="30" text="WHITE"/>
+    <Button GridPane.halignment="CENTER" fx:id="font8" onAction="#font8Click" GridPane.columnIndex="1" GridPane.rowIndex="2" prefWidth="80" prefHeight="30" text="8"/>
+
+    <Button GridPane.halignment="CENTER" fx:id="colorGrey" onAction="#colorGreyClick" GridPane.columnIndex="0" GridPane.rowIndex="3" prefWidth="80" prefHeight="30" text="GREY"/>
+    <Button GridPane.halignment="CENTER" fx:id="font10" onAction="#font10Click" GridPane.columnIndex="1" GridPane.rowIndex="3" prefWidth="80" prefHeight="30" text="10"/>
+
+    <Button GridPane.halignment="CENTER" fx:id="colorBlack"  onAction="#colorBlackClick" GridPane.columnIndex="0" GridPane.rowIndex="4" prefWidth="80" prefHeight="30" text="BLACK"/>
+    <Button GridPane.halignment="CENTER" fx:id="font12" onAction="#font12Click" GridPane.columnIndex="1" GridPane.rowIndex="4" prefWidth="80" prefHeight="30" text="12"/>
+
+    <Button GridPane.columnSpan="2" fx:id="configSave" onAction="#configSaveClick" GridPane.halignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="5" prefWidth="80" prefHeight="30" text="SAVE"/>
+    <Button GridPane.columnSpan="2" fx:id="configCancel" onAction="#configCancelClick" GridPane.halignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="6" prefWidth="80" prefHeight="30" text="CANCEL"/>
+</GridPane>
