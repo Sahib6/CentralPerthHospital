@@ -12,7 +12,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception
     {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("views/LoginPage.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("views/LoginScreen.fxml"));
         Parent loginScreen = loader.load();
         Scene scene = new Scene(loginScreen, ScreenSize.getScreenWidth() - 20, ScreenSize.getScreenHeight()-60);
         primaryStage.setMaximized(true);
